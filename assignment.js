@@ -97,3 +97,19 @@ for (let i = 0; i < numbers.length; i++) {
   product *= numbers[i]
 }
 console.log('product:', product)
+
+// use spread operator to mutate object instead
+const bla = {
+  a: 12,
+  b: 23,
+  c: 54,
+  d: 245,
+  e: 34,
+  f: 56,
+}
+
+bla.c = 3
+bla.d = 4
+bla.f = 101
+
+console.log('bla', bla)
