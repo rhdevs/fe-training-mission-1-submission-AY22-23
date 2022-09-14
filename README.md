@@ -3,8 +3,9 @@
 ## Instructions
 
 0. Clone this repo
-1. Name your submission as `<your name>.ts` and place it in the `submission-folder` folder!
-2. Create your own branch, and create a PR to `main`
-3. Wait for your PR to be approved before you can merge
-4. Once merged, copy the link of your assignment code from this repo and create a card component on the [main training repo](https://github.com/rhdevs/AY22-23-rhdevs-frontend-training/tree/main) under `Mission1HomePage`
-5. Similarly, branch and PR, and merge when ready
+1. Branch out from main and name the branch with `<your name>`
+2. Copy the code from `assignment.js`, and copy it to an online TypeScript compiler such as (this one)[]
+3. Follow the commented instructions in the `assignment.js` and convert the code into TypeScript
+4. Submit your code as `<your name>.ts` and place it in the `submission-folder` folder!
+5. Commit in your branch, push to GitHub, and create a PR to `main`
+6. Wait for your PR to be approved before you can merge (I will do a code review)
