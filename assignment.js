@@ -98,7 +98,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 console.log('product:', product)
 
-// use spread operator to mutate object instead
+// use spread operator to create newBla from bla
 const bla = {
   a: 12,
   b: 23,
@@ -107,9 +107,14 @@ const bla = {
   e: 34,
   f: 56,
 }
+// note that some elements in newBla are similar to bla
+const newBla = {
+  a: 12,
+  b: 23,
+  c: 3,
+  d: 4,
+  e: 34,
+  f: 101,
+}
 
-bla.c = 3
-bla.d = 4
-bla.f = 101
-
-console.log('bla', bla)
+console.log('newBla', newBla)
