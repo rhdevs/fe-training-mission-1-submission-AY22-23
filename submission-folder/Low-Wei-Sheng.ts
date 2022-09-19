@@ -7,50 +7,50 @@
 
 // replace all `var` declarations appropriatly
 
-const NINE_THOUSAND: number = 9000
+const NINE_THOUSAND = 9000
 let number = 6
 number = 7
 
 // create a type alias (rmb type alias names use PascalCase)
-type student = {
+type Student = {
     name: string
     year: number
     friends: string[]
     favouriteVariable: string | number
 }
 
-const bob: student = {
+const bob: Student = {
   name: 'Bob',
   year: 2,
   friends: ['Steve'],
   favouriteVariable: 23,
 }
 
-const steve: student = {
+const steve: Student = {
   name: 'Steve',
   year: 1,
   friends: ['Bob', 'Mary'],
   favouriteVariable: 'hello', // note that this shall ONLY be string or number
 }
 
-const mary: student = {
+const mary: Student = {
   name: 'Mary',
   year: 1,
   friends: ['Steve'],
   favouriteVariable: 100,
 }
 
-let students: student // assign an appropriate type to `students`
+const students: Student[] = [bob , steve, mary] // assign an appropriate type to `students`
 
 // convert to anonymous function
 // use string literals
 // add appropriate type declarations to function args
 const printNameAndYear = (student: student) => {
-  let text = `$(student.name) is year $(student.year)`
+  let text = `${student.name} is year ${student.year}`
   console.log(text)
 }
 const introduceSelf = (student: student) => {
-  let text = `Hello! I am $(student.name) and my favourite variable is $(student.favouriteVariable)`
+  let text = `Hello! I am ${student.name} and my favourite variable is ${student.favouriteVariable}`
   console.log(text)
 }
 printNameAndYear(bob)
