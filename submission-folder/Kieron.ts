@@ -15,7 +15,7 @@ number = 7
 type Student = {
   name: string
   year: number
-  friends: String[]
+  friends: string[]
   favouriteVariable: string | number
 }
 
@@ -46,12 +46,12 @@ const students: Student[] = [bob, steve, mary] // assign an appropriate type to 
 // use string literals
 // add appropriate type declarations to function args
 const print_name_and_year = (student: Student) => {
-  let text = `${student.name} is year ${student.year}`
+  const text = `${student.name} is year ${student.year}`
   console.log(text)
 }
 
 const introduce_self = (student: Student) => {
-  let text =
+  const text =
     `Hello! I am ${student.name} and my favourite variable is ${student.favouriteVariable}`
   console.log(text)
 }
@@ -65,8 +65,8 @@ introduce_self(mary)
 // use short_circuit
 // rmb to replace all `var`
 
-let a = 1
-let b = 'bee'
+const a = 1
+const b = 'bee'
 const c = [3, 4, 5]
 
 a === 1 && console.log('a is one')
