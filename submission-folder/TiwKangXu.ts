@@ -7,7 +7,7 @@
 
 // replace all `var` declarations appropriatly
 
-let NINE_THOUSAND = 9000
+const NINE_THOUSAND = 9000
 let number = 6
 number = 7
 
@@ -16,14 +16,14 @@ type Student = {
     name: string
     year: number
     friends: string[]
-    favouriteVariable: string
+    favouriteVariable: string | number
 }
 
 const bob: Student = {
   name: 'Bob',
   year: 2,
   friends: ['Steve'],
-  favouriteVariable: `${23}`,
+  favouriteVariable: 23,
 }
 
 const steve: Student = {
@@ -91,7 +91,7 @@ s.length > 10
 
 
 // use map() or reduce()
-let numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5]
 let newNumbers = []
 
 // for (let i = 0; i < numbers.length; i++) {
@@ -105,7 +105,7 @@ let product = 1
 // for (let i = 0; i < numbers.length; i++) {
 //   product *= numbers[i]
 // }
-newNumbers = numbers.map((x, y) => product * x * y)
+product = numbers.reduce((x, y) => x * y)
 console.log('product:', product)
 
 // use spread operator to mutate object instead
