@@ -7,8 +7,8 @@
 
 // replace all `var` declarations appropriatly
 
-const NINE_THOUSAND : number = 9000
-let number : number = 6
+const NINE_THOUSAND = 9000
+let number = 6
 number = 7
 
 // create a type alias (rmb type alias names use PascalCase)
@@ -47,11 +47,11 @@ let students: Student[] = [bob, steve, mary] // assign an appropriate type to `s
 // use string literals
 // add appropriate type declarations to function args
 const printNameAndYear = (student: Student) => {
-  let text: String = `${student.name} is year  ${student.year}`
+  let text = `${student.name} is year  ${student.year}`
   console.log(text)
 }
 const introduceSelf = (student: Student) => {
-  let text: String =
+  let text =
     `Hello! I am ${student.name} and my favourite variable is ${student.favouriteVariable}`
   console.log(text)
 }
@@ -65,9 +65,9 @@ introduceSelf(mary)
 // use short_circuit
 // rmb to replace all `var`
 
-let a: number = 1
-let b: string = 'bee'
-let c: number[] = [3, 4, 5]
+let a = 1
+let b = 'bee'
+let c = [3, 4, 5]
 
 
 a === 1 && console.log('a is one')
@@ -78,18 +78,18 @@ c.length === 3 && c[0] === 3 && console.log('c is an array of length 3, and its 
 
 
 // use ternary operator
-let s : String = 'is a loooooooooong string'
+let s = 'is a loooooooooong string'
 
 console.log(s.length > 10 ? 's is a long string' : 's is a short string')
 
 // use map() or reduce()
-let numbers: number[] = [1, 2, 3, 4, 5]
+let numbers = [1, 2, 3, 4, 5]
 
-let newNumbers: number[] = numbers.map((index,num) => index + num)
+let newNumbers = numbers.map((index,num) => index + num)
 
 console.log('newNumbers:', newNumbers)
 
-let product: number = numbers.reduce ((val1, val2) => val1 * val2)
+let product = numbers.reduce ((val1, val2) => val1 * val2)
 
 console.log('product:', product)
 
