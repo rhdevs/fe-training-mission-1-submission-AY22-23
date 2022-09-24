@@ -40,7 +40,7 @@ const mary: Student = {
   favouriteVariable: 100,
 }
 
-let students: Student[] = [bob, steve, mary] // assign an appropriate type to `students`
+const students: Student[] = [bob, steve, mary] // assign an appropriate type to `students`
 
 // convert to anonymous function
 // use string literals
