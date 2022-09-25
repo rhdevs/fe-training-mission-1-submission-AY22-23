@@ -43,17 +43,19 @@ mary = {
   favouriteVariable: 100,
 }
 type StudentArray = Student[]
-let students : StudentArray = [bob, steve, mary] // assign an appropriate type to `students`
+const students : StudentArray = [bob, steve, mary] // assign an appropriate type to `students`
 
 // convert to anonymous function
 // use string literals
 // add appropriate type declarations to function args
 const printNameAndYear = (student : Student) => {
-    console.log(student.name + ' is year ' + student.year)
+    const text = `${student.name} is year  ${student.year}`
+    console.log(text)
 }
 
 const introduceSelf = (student : Student) => {
-    console.log('Hello! I am ' + student.name + ' and my favourite variable is ' + student.favouriteVariable)
+      let text = `Hello! I am ${student.name} and my favourite variable is ${student.favouriteVariable}`
+  console.log(text)
     
 }
 printNameAndYear(bob)
@@ -66,9 +68,9 @@ introduceSelf(mary)
 // use short_circuit
 // rmb to replace all `var`
 
-let a = 1
-let b = 'bee'
-let c = [3, 4, 5]
+const a = 1
+const b = 'bee'
+const c = [3, 4, 5]
 
 a === 1 && console.log('a is one')
 
@@ -79,17 +81,17 @@ c.length === 3 && c[0] === 3 && console.log('c is an array of length 3, and its 
 
 // use ternary operator
 const s = 'is a loooooooooong string'
-let check : void = (s.length > 10)
-                   ?console.log('s is a long string')
-                   :console.log('s is a short string')
+const check = (s.length > 10)
+            ?console.log('s is a long string')
+            :console.log('s is a short string')
 
 // use map() or reduce()
-let numbers = [1, 2, 3, 4, 5]
-let newNumbers = numbers.map((num, index) => num + index)
+const numbers = [1, 2, 3, 4, 5]
+const newNumbers = numbers.map((index, num) => index + num)
 
 console.log('newNumbers:', newNumbers)
 
-let product = numbers.reduce((x, y) => x * y )
+const product = numbers.reduce((x, y) => x * y )
 console.log('product:', product)
 
 // use spread operator to mutate object instead
