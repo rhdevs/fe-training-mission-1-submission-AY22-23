@@ -7,7 +7,7 @@
 
 // replace all `var` declarations appropriatly
 
-let NINE_THOUSAND = 9000
+const NINE_THOUSAND = 9000
 let num = 6
 num = 7
 
@@ -45,18 +45,17 @@ mary = {
   favouriteVariable: 100,
 }
 
-type students =  Student[]
-let students = [bob, steve, mary] // assign an appropriate type to `students`
+const students: Student[] = [bob, steve, mary] // assign an appropriate type to `students`
 
 // convert to anonymous function
 // use string literals
 // add appropriate type declarations to function args
 const printNameAndYear = (student: Student) => {
-  let text = `${student.name} is year ${student.year}`
+  const text = `${student.name} is year ${student.year}`
   console.log(text)
 }
 const introduceSelf = (student: Student) => {
-  let text =
+  const text =
     `Hello! I am ${student.name} and my favourite variable is ${student.favouriteVariable}`
   console.log(text)
 }
@@ -70,9 +69,9 @@ introduceSelf(mary)
 // use short_circuit
 // rmb to replace all `var`
 
-let a = 1
-let b = 'bee'
-let c = [3, 4, 5]
+const a = 1
+const b = 'bee'
+const c = [3, 4, 5]
 
 a === 1 && console.log('a is one');
 b.length > 0 && console.log('b is a non-empty string');
@@ -83,7 +82,7 @@ const s = 'is a loooooooooong string';
 console.log(s.length > 10 ? 's is a long string' : 's is a short string')
 
 // use map() or reduce()
-let numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5]
 
 const newNumbers = numbers.map((num, index) => index + num)
 console.log('newNumbers:', newNumbers)
