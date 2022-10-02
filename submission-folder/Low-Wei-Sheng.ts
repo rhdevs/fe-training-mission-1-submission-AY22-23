@@ -7,7 +7,7 @@
 
 // replace all `var` declarations appropriatly
 
-const NINE_THOUSAND: number = 9000
+const NINE_THOUSAND = 9000
 let number = 6
 number = 7
 

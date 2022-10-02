@@ -7,7 +7,7 @@
 
 // replace all `var` declarations appropriatly
 
-let number NINE_THOUSAND = 9000
+var NINE_THOUSAND = 9000
 var number = 6
 number = 7
 
