@@ -12,46 +12,46 @@ let number = 6
 number = 7
 
 // create a type alias (rmb type alias names use PascalCase)
-type student = {
+type Student = {
     name: string
     year: number
     friends: string[]
     favouriteVariable: string | number
 }
 
-const bob: student = {
-  name: 'Bob',
-  year: 2,
-  friends: ['Steve'],
-  favouriteVariable: 23,
+const bob: Student = {
+    name: 'Bob',
+    year: 2,
+    friends: ['Steve'],
+    favouriteVariable: 23,
 }
 
-const steve: student = {
-  name: 'Steve',
-  year: 1,
-  friends: ['Bob', 'Mary'],
-  favouriteVariable: 'hello', // note that this shall ONLY be string or number
+const steve: Student = {
+    name: 'Steve',
+    year: 1,
+    friends: ['Bob', 'Mary'],
+    favouriteVariable: 'hello', // note that this shall ONLY be string or number
 }
 
-const mary: student = {
-  name: 'Mary',
-  year: 1,
-  friends: ['Steve'],
-  favouriteVariable: 100,
+const mary: Student = {
+    name: 'Mary',
+    year: 1,
+    friends: ['Steve'],
+    favouriteVariable: 100,
 }
 
-let students: student // assign an appropriate type to `students`
+let students: Student[] = [bob, steve, mary] // assign an appropriate type to `students`
 
 // convert to anonymous function
 // use string literals
 // add appropriate type declarations to function args
-const printNameAndYear = (student: student) => {
-  let text = `$(student.name) is year $(student.year)`
-  console.log(text)
+const printNameAndYear = (student: Student) => {
+    const text = `${student.name} is year ${student.year}`
+    console.log(text)
 }
-const introduceSelf = (student: student) => {
-  let text = `Hello! I am $(student.name) and my favourite variable is $(student.favouriteVariable)`
-  console.log(text)
+const introduceSelf = (student: Student) => {
+    const text = `Hello! I am ${student.name} and my favourite variable is ${student.favouriteVariable}`
+    console.log(text)
 }
 printNameAndYear(bob)
 introduceSelf(bob)
@@ -86,16 +86,16 @@ console.log('product:', product)
 
 // use spread operator to mutate object instead
 let bla = {
-  a: 12,
-  b: 23,
-  c: 54,
-  d: 245,
-  e: 34,
-  f: 56,
+    a: 12,
+    b: 23,
+    c: 54,
+    d: 245,
+    e: 34,
+    f: 56,
 }
 
 bla = {
-    ...bla, 
+    ...bla,
     c: 0,
     d: 4,
     f: 101
