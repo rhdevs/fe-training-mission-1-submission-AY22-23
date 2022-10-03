@@ -45,15 +45,12 @@ let students: Person[] = [bob, steve, mary] // assign an appropriate type to `st
 // add appropriate type declarations to function args
 
 //answer
-const printNameAndYear = (student: Person) => {
-    let text = student.name + ' is year ' + student.year 
-    console.log(text)
+const printNameAndYear = (student: Person) => { 
+    console.log(`${student.name} is year ${student.year}`)
 }
 
 const introduceSelf = (student: Person) => {
-    let text = 
-        "Hello! I am " + student.name + " and my favourite letiable is " + student.favouriteletiable
-    console.log(text)
+    console.log(`Hello! I am ${student.name} and my favourite letiable is  ${student.favouriteletiable}`)
 } 
 
 printNameAndYear(bob)
@@ -66,9 +63,9 @@ introduceSelf(mary)
 // use short_circuit
 // rmb to replace all `var`
 
-let a = 1
-let b = 'bee'
-let c = [3, 4, 5]
+const a = 1
+const b = 'bee'
+const c = [3, 4, 5]
 
 // if (a === 1) {
 //   console.log('a is one')
@@ -82,7 +79,7 @@ let c = [3, 4, 5]
 
 //answer
 console.log((a !== 1) || 'a is one')
-console.log(b.length <= 0 || 'bee')
+console.log(b.length <= 0 || `${b}`)
 console.log((c.length != 3 && c[0] != 3) || 'c is an array of length 3, and its first element is the number 3')
 
 // use ternary operator
@@ -98,7 +95,7 @@ console.log((s.length > 10) ? 's is a long string' : 's is a short string')
 // }
 
 // use map() or reduce()
-let numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5]
 
 //answer
 let newNumbers = numbers.map((index, num) => num + index)
