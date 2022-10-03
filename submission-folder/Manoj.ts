@@ -94,7 +94,7 @@ for (let i = 0; i < numbers.length; i++) {
 }*/
 console.log('newNumbers:', newNumbers)
 
-let product:number = numbers.reduce((x:number, y:number)=> x*y);
+const product = numbers.reduce((x, y)=> x*y);
 /*
 for (let i = 0; i < numbers.length; i++) {
   product *= numbers[i]
